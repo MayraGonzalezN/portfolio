@@ -1,0 +1,228 @@
+/*   FONTS   */
+@font-face {
+  font-family: 'pixelFont2';
+  src: url('./fonts/pixelFonts2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LuisG';
+  src: url('./fonts/LouisG.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url(./image/background.jpg);
+  color: #fff;
+  font-family: 'LuisG', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 60px;
+}
+
+/*   CONTENEDOR PRINCIPAL    */
+.main-container {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+/*  NAVEGADOR   */
+.sidebar {
+  width: 250px;
+  background-color: #0000003b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ebe8e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1002;
+}
+
+.sidebar img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ebe8e8;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  padding: 15px;
+  margin: 22px 0;
+  background-color: #0e0e10;
+  font-family: 'pixelFont2';
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #ebe8e8;
+  transition: 0.5s;
+}
+
+li a:hover {
+  background-color: #031d40;
+  border-color: #1e43ac;
+}
+
+/*   TITULOS   */
+
+h1,
+h2 {
+  font-family: 'pixelFont2';
+  font-size: 2.5em;
+}
+
+h3 {
+  font-family: 'pixelFont2';
+  font-size: 2em;
+  font-weight: normal;
+}
+
+p {
+  font-size: .8em;
+}
+
+.pixel-icon {
+  width: 5vw;
+  height: auto;
+  max-width: 50px;
+  vertical-align: text-top;
+}
+
+/*   CONTENIDO   */
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 9vw;
+  vertical-align: middle;
+}
+
+/*   SECCIONES   */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/*   LISTA DE IMAGENES   */
+ul .listImg {
+  margin-bottom: 10px;
+  border: 1px solid #ebe8e8;
+}
+
+ul img {
+  width: 100%;
+  height: auto;
+}
+
+/*    FORMULARIO    */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-div {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 177px;
+  font-family: 'pixelFont2';
+  font-size: 1.2em;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+input,
+textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  font-family: 'LuisG';
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #20202040;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'pixelFont2', cursive;
+  border: 1px solid #ebe8e8;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #031d40;
+  border-color: #1e43ac;
+}
+
+/*   FOOTER   */
+footer {
+  background-color: #0000003b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+footer a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer p {
+  font-family: 'pixelFont2';
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/*   TAMAÑO PARA PANTALLAS MAS CHICAS   */
+@media screen and (max-width: 768px) {
+  .barraLateral {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .barraLateral {
+    width: 100px;
+  }
+}
